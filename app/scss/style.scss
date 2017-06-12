@@ -29,30 +29,37 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: #ededed;
+}
+
 .column,
 .columns {
   width: 100%;
   float: left;
-  box-sizing: border-box; }
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
+  box-sizing: border-box; 
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* mobile */
+@media (max-width: 767px) {
   .container {
-    width: 80%; }
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    width: 95%; 
+  }
   .column,
   .columns {
-    margin-left: 4%; }
+    margin-left: 4%; 
+  }
   .column:first-child,
   .columns:first-child {
-    margin-left: 0; }
+    margin-left: 0; 
+  }
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
@@ -107,6 +114,20 @@
 
 }
 
+/* Desktop */
+@media (min-width: 1200px) {
+  .container {
+    width: 80%; 
+  }
+  .column,
+  .columns {
+    margin-left: 4%; 
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; 
+  }
+}
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -415,6 +436,9 @@ there.
 
 
 
+/* Temp Test Stuff Please Ignore...
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 h1, h2, h3, h4, h5, h6, p {
   color: #565656; 
@@ -424,7 +448,4 @@ body {
   background: white; 
 }
 
-.container {
-  background: #ededed;
-  padding: 20px;
-}
+
